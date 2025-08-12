@@ -167,6 +167,6 @@ function auth(req, res, next) {
   app.delete('/colleges/:id', auth, async (req, res) => { /* ... */ });
   
 
-app.listen(3000, () => {
-  console.log('API server running at http://localhost:3000');
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => { console.log(`Server running on port ${PORT}`); });
+
