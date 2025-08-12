@@ -1,0 +1,250 @@
+body {
+    background: linear-gradient(135deg, #7f53ac 0%, #647dee 100%);
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    color: #232946;
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  header {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  #searchBox {
+    padding: 0.7rem 1rem;
+    width: 300px;
+    border-radius: 24px;
+    border: none;
+    font-size: 1rem;
+    background: #f2f2f2;
+  }
+  
+  #collegeList {
+    max-width: 700px;
+    margin: 2rem auto;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .college-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(100, 125, 238, 0.15);
+    padding: 2rem;
+    transition: transform 0.15s;
+  }
+  .college-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 8px 32px rgba(100, 125, 238, 0.22);
+  }
+  .college-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #647dee;
+    margin: 0;
+  }
+  .college-location {
+    font-size: 1.1rem;
+    color: #8d72e1;
+    margin-top: 0.5rem;
+  }
+  .college-description {
+    margin: 1rem 0;
+    color: #232946;
+    font-size: 1rem;
+  }
+  .college-courses {
+    font-size: 1rem;
+    color: #393e46;
+  }
+  .college-website a {
+    color: #647dee;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  footer {
+    text-align: center;
+    padding: 1.5rem 0 .5rem 0;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  #adminSection {
+    max-width: 400px;
+    margin: 1.5rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(100, 125, 238, 0.08);
+    padding: 2rem;
+    text-align: center;
+  }
+  #loginForm input {
+    width: 90%;
+    margin: 0.6rem 0;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #647dee;
+    font-size: 1rem;
+    outline: none;
+  }
+  #loginForm button {
+    background: linear-gradient(90deg, #647dee, #7f53ac);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 2.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.8rem;
+  }
+  #loginMsg {
+    color: #8d72e1;
+    margin-top: 0.5rem;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(50, 50, 80, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .modal-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 6px 36px rgba(100, 125, 238, 0.22);
+  }
+  .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 2rem;
+    color: #647dee;
+    cursor: pointer;
+  }
+  #editCollegeForm input,
+  #editCollegeForm textarea {
+    width: 96%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #647dee;
+    font-size: 1rem;
+  }
+  #editCollegeForm button {
+    background: linear-gradient(90deg, #647dee, #7f53ac);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  #editMsg {
+    color: #8d72e1;
+    margin-top: 0.7rem;
+  }
+  
+
+  #logoutBtn {
+    display: block;
+    margin: 1.5rem auto 1.25rem auto;
+    padding: 0.7rem 2.2rem;
+    background: linear-gradient(90deg, #f22266, #8d72e1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(242,34,102,0.09);
+    cursor: pointer;
+    transition: background 0.22s, transform 0.13s;
+  }
+  
+  #logoutBtn:hover {
+    background: linear-gradient(90deg, #8d72e1, #f22266);
+    transform: scale(1.05);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #adminSection,
+#manageColleges {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(100,125,238,0.16);
+  padding: 2rem 2.5rem;
+}
+
+#adminSection h2,
+#manageColleges h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #647dee;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #8d72e1;
+  font-size: 1rem;
+  background: #f7f8fc;
+  transition: border 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #647dee;
+}
+
+form button {
+  background: linear-gradient(90deg,#647dee,#7f53ac);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 0;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg,#7f53ac,#647dee);
+}

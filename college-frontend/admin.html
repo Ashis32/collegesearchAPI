@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admin - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>College Admin Dashboard</h1>
+    <a href="index.html" class="admin-link">← Public Home</a>
+  </header>
+  <section id="adminSection">
+    <h2>Admin Login</h2>
+    <form id="loginForm">
+      <input type="email" id="adminEmail" placeholder="Admin Email" required>
+      <input type="password" id="adminPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMsg"></p>
+  </section>
+  <section id="manageColleges" style="display:none;">
+    <h2>Manage Colleges</h2>
+    <button id="logoutBtn">Logout</button>
+    <form id="addCollegeForm">
+      <input id="collegeName" placeholder="College Name" required>
+      <input id="collegeLocation" placeholder="Location" required>
+      <input id="collegeWebsite" type="url" placeholder="Website URL" required>
+      <textarea id="collegeDescription" placeholder="Description"></textarea>
+      <input id="collegeCourses" placeholder="Courses (comma separated)" required>
+      <button type="submit">Add College</button>
+    </form>
+    <p id="addMsg"></p>
+    <div id="collegeList"></div>
+  </section>
+  <!-- Edit Modal -->
+  <div id="editModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Edit College</h2>
+      <form id="editCollegeForm">
+        <input id="editName" required>
+        <input id="editLocation" required>
+        <input id="editWebsite" type="url" required>
+        <textarea id="editDescription"></textarea>
+        <input id="editCourses" required>
+        <button type="submit">Save</button>
+      </form>
+      <p id="editMsg"></p>
+    </div>
+  </div>
+  <footer>© 2024 My College API Demo</footer>
+  <script src="admin.js"></script>
+</body>
+</html>
